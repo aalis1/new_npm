@@ -9,4 +9,4 @@ const calculateBonus = (a, b) => {
 
 module.exports = calculateBonus;
 
-console.log(calculateBonus(57, 83));
+console.log(calculateBonus(-570, -838));
