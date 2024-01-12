@@ -1,7 +1,7 @@
 const calculateBonus = require("./calcBonus");
 
 test("bonus should be equal 50", () => {
-  expect(calculateBonus(38, 36)).toBe(50);
+  expect(calculateBonus(18, 32)).toBe(50);
 });
 
 test("bonus should be equal sum", () => {
@@ -21,5 +21,9 @@ test("bonus should be equal 50, big vulues", () => {
 });
 
 test("test on null values", () => {
-  expect(calculateBonu(null, null)).toBe(0);
+  expect(calculateBonus(null, null)).toBe(0);
+});
+
+test("test on text values", () => {
+  expect(calculateBonus(text, text)).not.toBe("number");
 });
